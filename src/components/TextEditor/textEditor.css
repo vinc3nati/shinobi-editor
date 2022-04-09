@@ -1,0 +1,38 @@
+
+.ProseMirror {
+	border: 1px solid var(--color-tertiary-dark);
+	font-size: 1.8rem;
+	margin: 10px 20px 10px 10rem;
+	min-height: 100vh;
+	padding: 1.5rem 2rem;
+	border-radius: var(--border-radius-3);
+}
+.ProseMirror:focus {
+	outline: none;
+}
+
+.ProseMirror img {
+	max-width: 100%;
+	margin: auto;
+	height: 30rem;
+	border-radius: inherit;
+}
+
+a {
+	color: var(--color-primary);
+	cursor: pointer;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+	content: 'Start Typing Here';
+	float: left;
+	color: #ced4da;
+	pointer-events: none;
+	height: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.ProseMirror {
+		margin: 10px 20px 10px 70px;
+	}
+}
