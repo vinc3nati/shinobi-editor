@@ -14,7 +14,7 @@ export const Modal = ({ label, operations }) => {
           <label htmlFor="modal-input" className="h6 text-primary">
             {label}
           </label>
-          <div classNameName="input-grp">
+          <div className="input-grp">
             <input
               id="modal-input"
               type="text"
